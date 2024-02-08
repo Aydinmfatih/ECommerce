@@ -35,7 +35,7 @@ namespace ECommerce.IdentityServer.Controllers
             }
             else
             {
-                return BadRequest("Bir Hata Oluştu");
+                return Ok("Bir Hata Oluştu");
             }
         }
     }
