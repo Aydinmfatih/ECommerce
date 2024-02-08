@@ -1,9 +1,11 @@
 ﻿using ECommerce.Basket.LoginServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerce.Basket.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class BasketController : ControllerBase
